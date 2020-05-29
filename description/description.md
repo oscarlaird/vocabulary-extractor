@@ -1,6 +1,6 @@
 <!-- BANNER -->
 
-![](https://raw.githubusercontent.com/oscarlaird/vocabulary-extractor/master/screenshots/1.png)
+![screenshot](https://raw.githubusercontent.com/oscarlaird/vocabulary-extractor/master/screenshots/1.png)
 
 ### Description
 
