@@ -1,0 +1,1 @@
+An anki addon to extract hard vocabulary.
