@@ -12,5 +12,6 @@
 
 - Bad user interface on macOS.
 - Complicated inflections (e.g. 'uninterestingly') are often flagged. User will be asked to sort between known words and words they would like to learn.
+- English only.
 
 
