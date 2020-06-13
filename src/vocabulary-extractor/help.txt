@@ -1,3 +1,0 @@
-Please choose a plaintext .txt file from your computer.
-You can download many classic books in plaintext format at Gutenberg.org.
-Documentation can be found at https://ankiweb.net/shared/info/1152823001.
