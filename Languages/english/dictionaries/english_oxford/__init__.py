@@ -14,5 +14,5 @@ def querry_word(word):
     defns = [defn[18:-7] for defn in defns]
     origin = re.search('class="senseInnerWrapper"><p>([^<]+)<',source)
     if origin:
-        defns += [origin.group(1)]
+        defns += ['(etymology) '+origin.group(1)]
     return defns
