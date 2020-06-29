@@ -17,7 +17,7 @@ def querry_word(word):
     etym = soup.find("section",class_="etymology etym").find("p").get_text()
     defns = [defn.get_text() for gramb in soup.find_all("section",class_="gramb") for defn in gramb.find_all("span", class_="ind")]
     
-    if etym
+    if etym:
         defns += '(etymology) '+etym
     
     time.sleep(3) #wait three seconds before continuing -- lexico.com limits requests
