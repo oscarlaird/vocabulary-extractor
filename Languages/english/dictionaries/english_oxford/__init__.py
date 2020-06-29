@@ -9,7 +9,7 @@ def load_dictionary():
     pass
     
 def querry_word(word):
-    source = requests.get('https://www.lexico.com/definition/cotillion').text
+    source = requests.get(f'https://www.lexico.com/definition/{word}').text
     defns = re.findall('<span class="ind">[^<]+</span>',source)
     defns = [defn[18:-7] for defn in defns]
     return defns
