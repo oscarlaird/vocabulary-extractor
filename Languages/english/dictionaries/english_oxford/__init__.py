@@ -1,6 +1,7 @@
 import os
 import requests
 from bs4 import BeautifulSoup
+import time
 
 path = os.path.abspath(os.path.dirname(__file__))
 
@@ -10,7 +11,7 @@ def load_dictionary():
     pass
     
 def querry_word(word):
-    source = requests.get(f'https://www.lexico.com/definition/{word}').text
+    source = requests.get(f'https://www.lexico.com/definition/{word}').text #Lexico limits us to 1 request / 3s
     
     soup = BeautifulSoup(source, 'lxml') #use the fastest (lxml) parser
     etym = soup.find("section",class_="etymology etym").find("p").get_text()
@@ -18,5 +19,7 @@ def querry_word(word):
     
     if etym
         defns += '(etymology) '+etym
+    
+    time.sleep(3) #wait three seconds before continuing -- lexico.com limits requests
     
     return defns
